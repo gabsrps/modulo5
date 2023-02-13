@@ -40,15 +40,14 @@ int main(){
  
 
   cout << "------------------------------" <<  endl;
-
-  //verifica o tamanho da tabela hash
-  cout << "CT4: tamanho: " << clientesHash.getLength() << endl;
-
-  cout << "------------------------------" <<  endl;
-
-  cout << "CT5: "<< endl;
-  //exibe a tabela final
-  clientesHash.print();  
-  cout << "Fim" << endl; 
+ //tamanho do hash
+  cout << "CT4: Verificando o tamanho do hash" << endl;
+  cout << "Tamanho do Hash: " << clientesHash.getLength() << endl;
+  
+  //Verificar se ta cheia o hash
+  cout << "CT5: Verificando se a tabela está cheia" << endl;
+  cout << "A tabela está cheia? " << clientesHash.isFull() <<endl;
+  cout << "Fim";
+  return 0;
 }
-
+  
